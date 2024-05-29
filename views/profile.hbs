@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        img{
+            width:50px;
+            height:50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the profile</h1>
+    <img src={{user.googleImg}} alt="">
+    <div>{{user.username}}</div>
+    <div>{{user.password}}</div>
+    <div>{{user.googleId}}</div>
+    <form action="/logout" method="POST">
+        <button>Logout</button>
+    </form>
+        
+</body>
+</html>
